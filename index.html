@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Practice excercise</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+    
+    <div class="product-information">
+        <div class="img-info">
+            <div class="display-image">
+                <img src="./pic1.jpeg" alt="furniture picture" style="width:400px;height: 400px;float: left;">
+            </div>
+            <div class="display-image">
+                <img src="./pic2.jpeg" alt="furniture picture" style="width:400px;height: 400px;float: left;">
+            </div>
+            <div class="display-image">
+                <img src="./pic3.jpeg" alt="furniture picture" style="width:400px;height: 400px;float: left;">
+            </div>
+            <div class="display-image">
+                <img src="./pic4.jpeg" alt="furniture picture" style="width:400px;height: 400px;float: left;">
+            </div>
+            <a class="prev" onclick="slideChange(-1)">></i></a>
+             <a class="next" onclick="slideChange(1)"><</a>
+        </div>
+   
+
+             
+             
+        <div class="images">
+                  <div class="column">
+                      <img class="slides cursor" src="./pic1.jpeg" alt="furniture" onclick="currentSlide(1)" >
+                  </div>
+                  <div class="column">
+                    <img class="slides cursor" src="./pic2.jpeg" alt="furniture" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="slides cursor" src="./pic3.jpeg" alt="furniture" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="slides cursor" src="./pic4.jpeg" alt="furniture" onclick="currentSlide(4)">
+                </div>
+        </div>
+        <div class="text">
+             <h2 class="main-heading">Upholstered Sofa</h2>
+             <p class="sub-heading">kyara upholstered standard Bed by Zipcode Design </p>
+             <p class="description">Anchor your living room in sophisticated style and immpecable comfort with a single addition .Perfectely balancing wood accents with fabric uphoistery</p>
+
+             <div class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="reviews">
+                    <span style="color: green;">(5.0)</span> review based on 250
+                </p>
+                <a href="#" class="submit-review">Submit review</a>
+             </div>
+            
+              <p class="price">$567</p>
+
+        <div class="buttons">
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Dispatched in 7 working days </p>
+                <button class="cart-button">
+                    ADD TO CART
+                </button>
+                <button class="wishlist-button">
+                    ADD TO WISHLIST
+                </button>
+        </div>
+    </div> 
+    <div class="footer">
+
+        <div class="footer-content">
+            <i class="fa fa-shield icon " aria-hidden="true" ></i>
+            <p class="title">Secure Payment</p>
+            <p class="message">Don't worry , your money is in secure places</p>
+        </div>
+
+        <div class="footer-content">
+            <i class="fa fa-truck icon" aria-hidden="true"></i>
+            <p class="title">fast and free delivery!</p>
+            <p class="message">Home delivery $15 . For free delivery , order over $250</p>
+        </div>
+        <div class="footer-content">
+            <i class="fa fa-retweet icon" aria-hidden="true"></i>
+            <p class="title">Return Policy</p>
+            <p class="message">No hassie return policy</p>
+        </div>
+    </div>
+</section>
+
+<script src="./index.js"></script>
+</body>
+</html>

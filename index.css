@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,700;0,748;0,900;1,700&family=Poppins&display=swap');
+
+.product-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-info{
+    position: relative;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+}
+.display-image{
+    display: none;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-left: 200px;
+}
+.main-heading{
+ font-family:'Petrona';
+ font-weight: 900;
+ margin-top: 180px;
+ font-size: xx-large;
+ margin-bottom: 15px;
+}
+.sub-heading{
+  width:229px;
+  margin-bottom: 15px;
+  font-family: 'Poppins';
+  color: grey;
+  font-weight: bolder;
+}
+.description{
+  width: 465px;
+  height: 100px;
+  font-size: 14px ;
+  margin-bottom: 0px;
+  font-family: 'Poppins';
+  color: grey;
+}
+.checked{
+    color: green;
+}
+.submit-review{
+  color: black;
+  font-family: 'Poppins';
+  font-size: 11px;
+}
+.buttons{
+    font-family: 'Poppins';
+}
+.buttons p{
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-button{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 12px 30px;
+    border: 1px solid black;
+}
+.wishlist-button{
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 12px 30px;
+    border: 1px solid black;
+}
+.price{
+font-family: 'Poppins';
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 18px;
+}
+.reviews{
+    font-family: 'Poppins';
+    font-size: 11px;
+}
+.footer{
+    font-family: 'Poppins'; 
+    color: grey;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-content{
+ display: grid;
+ grid-template-columns:[first] 50px [line2] 200px  ;
+ grid-template-rows: [row1] 10% [row1-end] 60px;
+}
+.icon{
+ grid-column: first / line2;
+ grid-row: row1;
+ justify-self:end ;
+}
+.title{
+ grid-column: line2;
+ grid-row: row1;
+ align-self: center;
+ justify-self: start;
+ padding-left: 10px;
+}
+.message{
+padding-left: 10px;
+ grid-column: line2;
+ grid-row: row1-end;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: black;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .images{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     float: left;
+  }
+  .images:after {
+    display:block;
+    padding: 5px;
+  }
+  .column {
+    float: left;
+    width:80px;
+    padding:15px;
+  }
+  .cursor{
+      cursor: pointer;
+  }
+  .slides {
+    width: 80px;
+    height: 80px;
+    float: left;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px) {
+    .display-image{
+         width: 350px;
+         height: 250px;
+    }
+    .footer-content{
+        padding: 10px;
+    }
+    .main-heading{
+        margin-top: 80px;
+    }
+    .product-information{
+        display: flex;
+    }
+    .description{
+        width: 350px;
+    }
+    .text{
+        padding:15px;
+    }
+    .footer{
+        justify-content:start;
+        margin-top: 30px;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .display-image{
+        width: 700px;
+        height: 500px;
+   }
+   .text{
+       width: 100%;
+   }
+   .sub-heading , .description{
+       justify-content: start;
+       width: 80%;
+   }
+   .main-heading{
+    margin-top: 100px;
+   }
+}
